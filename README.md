@@ -60,7 +60,9 @@ The next step is to use descriptive names for activities. I have first processed
 
 Before moving to step 5 of the assignment, I have also converted the subject to a factor, since it is not really an integer value. Indeed, it makes not sense to add two participants, for example.
 
-Finally, I have created the dataset required in step 5. I've done that by using the melt and dcast functions of the reshape2 library. These functions are described in the video "reshaping data". I have also restricted each numeric value to have 4 decimal digits, to make the data more uniform.
+Finally, I have created the dataset required in step 5. I've done that by using the melt and dcast functions of the reshape2 library. By using the dcast function, I was able to easily get the average of each variable for each subject and activity.
+
+Finally, I have also restricted each numeric value to have 4 decimal digits, to make the data more uniform.
 
 # Code Book
 
