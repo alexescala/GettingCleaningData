@@ -7,19 +7,28 @@ This is the ReadMe file for the course project of Coursera's Getting and Cleanin
 
 The project requested the students to do the following: 
 1. Get some data from the following Url https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
 2. Create a script to clean the data
+
 > You should create one R script called run_analysis.R that does the following. 
+>
 > 1. Merges the training and the test sets to create one data set.
+>
 > 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+>
 > 3. Uses descriptive activity names to name the activities in the data set
+>
 > 4. Appropriately labels the data set with descriptive variable names. 
+>
 > 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+
 3. Upload the tidy data set to coursera
+
 4. Create a github repository containing: this ReadMe file, the R script and a Code Book for the dataset.
 
 # Tidy dataset
 
-The tidy dataset has been created as required in the assignment. It contains 180 rows (one per participant and activity) and 68 variables (the first two contain the subject and the activity, the remaining 66 of them contain the average values of the mean and std variables of the original file).
+The tidy dataset has been created as required in the assignment. It contains 180 rows (one per participant and activity) and 68 variables (the first two contain the subject and the activity, the remaining 66 of them contain the average values of the mean and std variables of the original file). Note that the values are rounded to 4 decimal digits, to make the values more uniform.
 
 It has been written to a file by using write.table using row.name=FALSE. This implies that the separator is a space, the decimal is a dot and the column names are written in the file.
 
