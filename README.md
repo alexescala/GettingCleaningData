@@ -6,25 +6,20 @@ This is the ReadMe file for the course project of Coursera's Getting and Cleanin
 # Project description
 
 The project requested the students to do the following: 
-1. Get some data from the following Url https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
+1. Get some data from the following Url https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 2. Create a script to clean the data
+3. Upload the tidy data set to coursera
+4. Create a github repository containing: this ReadMe file, the R script and a Code Book for the dataset.
+
+The mentioned script should do the following things
 
 > You should create one R script called run_analysis.R that does the following. 
->
 > 1. Merges the training and the test sets to create one data set.
->
 > 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
->
 > 3. Uses descriptive activity names to name the activities in the data set
->
 > 4. Appropriately labels the data set with descriptive variable names. 
->
 > 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
-
-3. Upload the tidy data set to coursera
-
-4. Create a github repository containing: this ReadMe file, the R script and a Code Book for the dataset.
 
 # Tidy dataset
 
@@ -55,6 +50,7 @@ Next, the variable names are processed to adhere to the standards of a tidy data
 > * Descriptive (Diagnosis versus Dx)
 > * Not duplicated
 > * Not have underscores or dots or white spaces
+
 In particular, the parenthesis are removed and the name is converted to lower case. The original variable names were not duplicated and did not have underscores, dots or white spaces. I consider that the variables are descriptive enough: if I had to make them more descriptive they would be too long.
 
 Once the variable names have been processed, they are assigned to the columns of the data frame.
